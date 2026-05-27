@@ -85,9 +85,9 @@ const pt: Dict = {
   "projects.highlights": "Destaques",
 
   "p1.title": "Katallo Platform",
-  "p1.short": "E-commerce platform integrated with WhatsApp.",
+  "p1.short": "Platform integrated with WhatsApp.",
   "p1.long":
-    "Katallo é uma plataforma e-commerce fullstack projetada para conectar catálogos online diretamente ao WhatsApp. O projeto combina uma experiência moderna no frontend com um backend robusto responsável por autenticação, gerenciamento de produtos, categorias e analytics.",
+    "Katallo é uma plataforma projetada para conectar catálogos online diretamente ao WhatsApp. O projeto combina uma experiência moderna no frontend com um backend robusto responsável por autenticação, gerenciamento de produtos, categorias e analytics.",
 
   "p2.title": "ClickJob",
   "p2.short": "Freelancer platform focused on connecting talent and opportunities.",
@@ -192,9 +192,9 @@ const en: Dict = {
   "projects.highlights": "Highlights",
 
   "p1.title": "Katallo Platform",
-  "p1.short": "E-commerce platform integrated with WhatsApp.",
+  "p1.short": "Platform integrated with WhatsApp.",
   "p1.long":
-    "Katallo is a fullstack e-commerce platform designed to connect online catalogs directly to WhatsApp. It combines a modern frontend experience with a robust backend for authentication, product and category management, and analytics.",
+    "Katallo is a platform designed to connect online catalogs directly to WhatsApp. It combines a modern frontend experience with a robust backend for authentication, product and category management, and analytics.",
 
   "p2.title": "ClickJob",
   "p2.short": "Freelancer platform focused on connecting talent and opportunities.",
