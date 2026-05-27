@@ -9,13 +9,13 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "sw
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono", display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Gabriel Oliveira — Software Engineer & Full Stack Developer",
+  title: "Gabriel Oliveira — Software Developer",
   description:
     "Portfolio of Gabriel Oliveira, a young Software Engineering student focused on backend with Java & Spring Boot, modern frontend with Next.js, and building real-world scalable products.",
   keywords: [
     "Gabriel Oliveira",
-    "Software Engineer",
-    "Full Stack Developer",
+    "Software Developer",
+    "Backend Developer",
     "Java",
     "Spring Boot",
     "Next.js",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   creator: "Gabriel Oliveira",
   openGraph: {
     type: "website",
-    title: "Gabriel Oliveira — Software Engineer & Full Stack Developer",
+    title: "Gabriel Oliveira — Software Developer",
     description:
       "Transformando ideias em produtos reais através de engenharia de software, visão de negócio e tecnologia moderna.",
     siteName: "Gabriel Oliveira",
