@@ -15,23 +15,23 @@ const pt: Dict = {
   "nav.contact": "Contato",
 
   // loading
-  "loading.text": "Inicializando experiência",
+  "loading.text": "Carregando portfólio",
 
   // hero
   "hero.eyebrow": "Disponível para novas oportunidades",
   "hero.title": "Desenvolvedor Backend",
   "hero.headline":
-    "Transformando ideias em produtos reais através de engenharia de software, visão de negócio e tecnologia moderna.",
+    "Transformando ideias em soluções reais por meio da engenharia de software.",
   "hero.sub":
-    "Estudante de Engenharia de Software focado em backend moderno, arquitetura de sistemas e desenvolvimento de produtos digitais escaláveis.",
+    "Estudante de Engenharia de Software focado em backend, arquitetura de sistemas e desenvolvimento de soluções digitais escaláveis.",
   "hero.long":
-    "Tenho 18 anos e sou apaixonado por tecnologia, engenharia de software e construção de produtos reais. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro frontend moderno para desenvolver aplicações completas, escaláveis e bem estruturadas. Mais do que apenas escrever código, busco entender negócios e como a tecnologia pode gerar resultado real.",
+    "Tenho 18 anos e sou apaixonado por tecnologia, engenharia de software e construção de soluções reais. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro frontend moderno para desenvolver aplicações completas, escaláveis e bem estruturadas. Mais do que apenas escrever código, busco entender negócios e como a tecnologia pode gerar resultado real.",
   "hero.cta.projects": "Ver Projetos",
   "hero.cta.contact": "Entrar em Contato",
   "hero.cta.cv": "Download CV",
   "hero.badge.opentowork": "Open to Work",
   "hero.badge.freelance": "Available for Freelance",
-  "hero.badge.products": "Building Real Products",
+  "hero.badge.products": "Building Real Solutions",
   "hero.badge.backend": "Backend Focused",
   "hero.badge.engineering": "Engineering Mindset",
   "hero.stat.projects": "Featured Projects",
@@ -45,9 +45,9 @@ const pt: Dict = {
   "about.p1":
     "Minha jornada na tecnologia começou movida pela curiosidade e rapidamente se transformou em uma ambição clara: construir soluções reais através da engenharia de software.",
   "about.p2":
-    "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend modernas, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de produtos de ponta a ponta.",
+    "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend modernas, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de soluções de ponta a ponta.",
   "about.p3":
-    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de produtos digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, experiência do usuário, escalabilidade e visão de negócio.",
+    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de soluções digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, experiência do usuário, escalabilidade e visão de negócio.",
   "about.p4":
     "Busco constantemente evolução técnica e profissional, com o objetivo de atuar em projetos de alto nível, oportunidades internacionais e desenvolvimento de soluções que gerem impacto real.",
   "about.p5":
@@ -55,7 +55,7 @@ const pt: Dict = {
   "about.card.backend.title": "Backend Engineering",
   "about.card.backend.desc": "APIs REST seguras, escaláveis e bem estruturadas com Java e Spring Boot.",
   "about.card.fullstack.title": "Full Stack Development",
-  "about.card.fullstack.desc": "Produtos completos de ponta a ponta, do banco de dados à interface.",
+  "about.card.fullstack.desc": "Solções completas de ponta a ponta, do banco de dados à interface.",
   "about.card.architecture.title": "Software Architecture",
   "about.card.architecture.desc": "Sistemas em camadas, organizados, sustentáveis e prontos para crescer.",
   "about.card.product.title": "Product Vision",
@@ -133,11 +133,11 @@ const en: Dict = {
   "hero.eyebrow": "Available for new opportunities",
   "hero.title": "Backend Developer",
   "hero.headline":
-    "Turning ideas into real products through software engineering, business vision and modern technology.",
+    "Transforming ideas into real solutions through software engineering.",
   "hero.sub":
     "Software Engineering student focused on modern backend, system architecture and scalable digital product development.",
   "hero.long":
-    "I'm 18 years old and passionate about technology, software engineering and building real products. I currently focus my studies on backend with Java and Spring Boot, while exploring modern frontend to develop complete, scalable and well-structured applications. More than just writing code, I aim to understand business, user experience and how technology can create real impact.",
+    "I'm 18 years old and passionate about technology, software engineering and building real solutions. I currently focus my studies on backend with Java and Spring Boot, while exploring modern frontend to develop complete, scalable and well-structured applications. More than just writing code, I aim to understand business, user experience and how technology can create real impact.",
   "hero.cta.projects": "View Projects",
   "hero.cta.contact": "Get in Touch",
   "hero.cta.cv": "Download CV",
