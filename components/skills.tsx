@@ -28,40 +28,39 @@ const groups: {
   key: string
   items: { name: string; icon: React.ElementType }[]
 }[] = [
-  {
-    key: "skills.backend",
-    items: [
-      { name: "Java", icon: Coffee },
-      { name: "Spring Boot", icon: Leaf },
-      { name: "Maven", icon: Boxes },
-      { name: "JWT", icon: ShieldCheck },
-      { name: "REST APIs", icon: Network },
-      { name: "MySQL", icon: Database },
-      { name: "Docker", icon: Container },
-    ],
-  },
-  {
-    key: "skills.frontend",
-    items: [
-      { name: "HTML", icon: FileCode2 },
-      { name: "CSS", icon: Palette },
-      { name: "JavaScript", icon: Braces },
-      { name: "TypeScript", icon: FileType2 },
-      { name: "React", icon: Component },
-      { name: "Next.js", icon: Sparkles },
-      { name: "TailwindCSS", icon: Wind },
-    ],
-  },
-  {
-    key: "skills.tools",
-    items: [
-      { name: "Git", icon: GitBranch },
-      { name: "GitHub", icon: Github },
-      { name: "Docker", icon: Container },
-      { name: "Linux", icon: Terminal },
-    ],
-  },
-]
+    {
+      key: "skills.backend",
+      items: [
+        { name: "Java", icon: Coffee },
+        { name: "Spring Boot", icon: Leaf },
+        { name: "Maven", icon: Boxes },
+        { name: "JWT", icon: ShieldCheck },
+        { name: "REST APIs", icon: Network },
+        { name: "MySQL", icon: Database },
+        { name: "Docker", icon: Container },
+      ],
+    },
+    {
+      key: "skills.frontend",
+      items: [
+        { name: "HTML", icon: FileCode2 },
+        { name: "CSS", icon: Palette },
+        { name: "JavaScript", icon: Braces },
+        { name: "TypeScript", icon: FileType2 },
+        { name: "React", icon: Component },
+        { name: "Next.js", icon: Sparkles },
+        { name: "TailwindCSS", icon: Wind },
+      ],
+    },
+    {
+      key: "skills.tools",
+      items: [
+        { name: "Git", icon: GitBranch },
+        { name: "GitHub", icon: Github },
+        { name: "Docker", icon: Container },
+      ],
+    },
+  ]
 
 export function Skills() {
   const { t } = useLanguage()

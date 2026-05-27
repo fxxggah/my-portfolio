@@ -75,7 +75,7 @@ export function Navbar() {
             <span className="hidden sm:flex flex-col leading-none">
               <span className="text-sm font-semibold tracking-tight">Gabriel Oliveira</span>
               <span className="text-[10px] font-mono uppercase tracking-[0.18em] text-muted-foreground">
-                Software Engineer
+                Software Developer
               </span>
             </span>
           </button>

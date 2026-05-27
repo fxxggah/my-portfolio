@@ -19,9 +19,8 @@ const PHRASES = [
 ]
 
 export function Hero() {
-  const { t } = useLanguage()
+  const { t, downloadCV } = useLanguage()
   const ref = useReveal<HTMLDivElement>()
-
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
   }
@@ -96,13 +95,13 @@ export function Hero() {
                 <Mail className="h-4 w-4" />
                 {t("hero.cta.contact")}
               </button>
-              <a
-                href="#"
+              <button
+                onClick={downloadCV}
                 className="inline-flex items-center gap-2 rounded-full border border-border/60 px-5 py-3 text-sm font-medium text-muted-foreground transition-all hover:border-primary/40 hover:text-foreground"
               >
                 <Download className="h-4 w-4" />
                 {t("hero.cta.cv")}
-              </a>
+              </button>
             </div>
           </div>
 

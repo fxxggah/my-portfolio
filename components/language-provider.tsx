@@ -25,7 +25,7 @@ const pt: Dict = {
   "hero.sub":
     "Estudante de Engenharia de Software focado em backend moderno, arquitetura de sistemas e desenvolvimento de produtos digitais escaláveis.",
   "hero.long":
-    "Tenho 18 anos e sou apaixonado por tecnologia, engenharia de software e construção de produtos reais. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro frontend moderno para desenvolver aplicações completas, escaláveis e bem estruturadas. Mais do que apenas escrever código, busco entender negócios, experiência do usuário e como a tecnologia pode gerar impacto real.",
+    "Tenho 18 anos e sou apaixonado por tecnologia, engenharia de software e construção de produtos reais. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro frontend moderno para desenvolver aplicações completas, escaláveis e bem estruturadas. Mais do que apenas escrever código, busco entender negócios e como a tecnologia pode gerar resultado real.",
   "hero.cta.projects": "Ver Projetos",
   "hero.cta.contact": "Entrar em Contato",
   "hero.cta.cv": "Download CV",
@@ -34,7 +34,7 @@ const pt: Dict = {
   "hero.badge.products": "Building Real Products",
   "hero.badge.backend": "Backend Focused",
   "hero.badge.engineering": "Engineering Mindset",
-  "hero.stat.projects": "Projetos Reais",
+  "hero.stat.projects": "Featured Projects",
   "hero.stat.backend": "Backend Focused",
   "hero.stat.fullstack": "Full Stack Projects",
   "hero.stat.learning": "Always Learning",
@@ -233,6 +233,7 @@ type LanguageContextValue = {
   setLanguage: (lang: Language) => void
   toggleLanguage: () => void
   t: (key: string) => string
+  downloadCV: () => void
 }
 
 const LanguageContext = React.createContext<LanguageContextValue | null>(null)
@@ -265,8 +266,19 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     [language],
   )
 
+  const downloadCV = React.useCallback(() => {
+    if (typeof window !== "undefined") {
+      const link = document.createElement("a")
+      link.href = "/gabriel-oliveira-dev-curriculo.pdf"
+      link.download = "Gabriel_Oliveira_da_Silva_CV.pdf"
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+  }, [])
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, t, downloadCV }}>
       {children}
     </LanguageContext.Provider>
   )
