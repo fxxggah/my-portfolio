@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Image from "next/image"
-import { ArrowUpRight, Github, ImageIcon, Sparkles, GraduationCap, X, Monitor, Smartphone } from "lucide-react"
+import { ArrowUpRight, Github, ImageIcon, Sparkles, GraduationCap, X, Monitor, Smartphone, Code2, Terminal } from "lucide-react"
 import { useLanguage } from "@/components/language-provider"
 import { SectionHeader } from "@/components/section-header"
 import { useReveal } from "@/hooks/use-reveal"
@@ -17,7 +17,7 @@ type Project = {
   statusTone: "dev" | "mvp" | "done"
   highlights: string[]
   stack: string[]
-  github?: string
+  github?: string | { frontend: string; backend: string }
   demo?: string
   tcc?: boolean
   image?: string
@@ -34,8 +34,12 @@ const projects: Project[] = [
     statusTone: "dev",
     highlights: ["JWT Authentication", "Google OAuth", "Shopping Cart", "WhatsApp Integration", "Modern fullstack"],
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Java", "Spring Boot", "JWT", "MySQL", "Docker"],
-    image: "/katallo-pc.png",        
-    imageMobile: "/katallo-mobile.png", 
+    image: "/katallo-pc.png",
+    imageMobile: "/katallo-mobile.png",
+    github: {
+      frontend: "https://github.com/fxxggah/frontend-katallo-platform",
+      backend: "https://github.com/fxxggah/backend-katallo-platform"
+    }
   },
   {
     id: "clickjob",
@@ -49,6 +53,10 @@ const projects: Project[] = [
     stack: ["Next.js", "React", "TypeScript", "Java", "Spring Boot", "JWT", "MySQL"],
     image: "/clickjob-pc.png",
     imageMobile: "/clickjob-mobile.png",
+    github: {
+      frontend: "https://github.com/fxxggah/frontend-freelance-platform",
+      backend: "https://github.com/fxxggah/backend-freelance-platform"
+    }
   },
   {
     id: "stock",
@@ -59,6 +67,7 @@ const projects: Project[] = [
     statusTone: "done",
     highlights: ["Java 17", "Spring Boot", "Docker", "Layered arch.", "Automated tests"],
     stack: ["Java 17", "Spring Boot", "MySQL", "Docker", "JUnit"],
+    github: "https://github.com/fxxggah/api-inventory-management"
   },
   {
     id: "auth",
@@ -69,6 +78,7 @@ const projects: Project[] = [
     statusTone: "done",
     highlights: ["JWT", "Refresh Token", "Spring Security", "Docker", "MySQL"],
     stack: ["Java", "Spring Boot", "JWT", "MySQL", "Docker"],
+    github: "https://github.com/fxxggah/spring-auth-api"
   },
 ]
 
@@ -86,19 +96,28 @@ export function Projects() {
   const [activeProject, setActiveProject] = React.useState<Project | null>(null)
   const [viewMode, setViewMode] = React.useState<"pc" | "mobile">("pc")
 
+  // Estado para controlar qual menu de repositórios do Github está aberto por ID do projeto
+  const [openGithubMenuId, setOpenGithubMenuId] = React.useState<string | null>(null)
+
   // Função para abrir o modal resetando a visão para PC primeiro
   const openModal = (project: Project) => {
     setActiveProject(project)
     setViewMode("pc")
   }
 
-  // Fecha o modal ao pressionar ESC de forma nativa
+  // Fecha o modal ao pressionar ESC e fecha menus suspensos
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") setActiveProject(null)
     }
+    const handleClickOutside = () => setOpenGithubMenuId(null)
+
     window.addEventListener("keydown", handleKeyDown)
-    return () => window.removeEventListener("keydown", handleKeyDown)
+    window.addEventListener("click", handleClickOutside)
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown)
+      window.removeEventListener("click", handleClickOutside)
+    }
   }, [])
 
   return (
@@ -121,10 +140,10 @@ export function Projects() {
               {/* Container da Imagem ou Placeholder */}
               <div className="relative aspect-[16/10] overflow-hidden border-b border-border/60 bg-gradient-to-br from-primary/10 via-card to-background">
                 <div className="absolute inset-0 bg-grid opacity-30" />
-                
+
                 {/* Condicional de renderização da imagem */}
                 {p.image ? (
-                  <button 
+                  <button
                     onClick={() => openModal(p)}
                     className="absolute inset-0 flex flex-col p-3 sm:p-4 pb-0 w-full h-full text-left focus:outline-none"
                     title="Clique para ampliar"
@@ -137,7 +156,7 @@ export function Projects() {
                         <div className="h-2.5 w-2.5 rounded-full bg-[#FFBD2E] opacity-80" />
                         <div className="h-2.5 w-2.5 rounded-full bg-[#27C93F] opacity-80" />
                       </div>
-                      
+
                       {/* Wrapper interno da Imagem */}
                       <div className="relative w-full flex-1 overflow-hidden bg-background">
                         <Image
@@ -169,7 +188,7 @@ export function Projects() {
 
                 {/* Glow corner */}
                 <div className="pointer-events-none absolute -top-20 -right-20 h-48 w-48 rounded-full bg-primary/20 blur-3xl opacity-0 transition-opacity group-hover:opacity-100" />
-                
+
                 {/* Badges e Contador por cima da imagem */}
                 <div className="absolute left-6 top-6 flex items-center gap-2 z-10 pointer-events-none">
                   <span
@@ -230,15 +249,64 @@ export function Projects() {
                 </div>
 
                 <div className="mt-auto flex items-center gap-2 pt-2">
-                  <a
-                    href={p.github ?? "#"}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-border/60 bg-background/40 px-3.5 py-1.5 text-xs font-medium text-foreground transition-all hover:border-primary/40 hover:bg-card/70"
-                  >
-                    <Github className="h-3.5 w-3.5" />
-                    {t("projects.viewGithub")}
-                  </a>
+                  {/* Botão Dinâmico do GitHub */}
+                  {typeof p.github === "object" ? (
+                    <div className="relative" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        onClick={() => setOpenGithubMenuId(openGithubMenuId === p.id ? null : p.id)}
+                        className={cn(
+                          "inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium backdrop-blur transition-all",
+                          openGithubMenuId === p.id
+                            ? "border-primary/50 bg-primary/10 text-primary"
+                            : "border-border/60 bg-background/40 text-foreground hover:border-primary/40 hover:bg-card/70"
+                        )}
+                      >
+                        <Github className="h-3.5 w-3.5" />
+                        {t("projects.viewGithub")}
+                      </button>
+
+                      {/* Dropdown Menu com efeito Glassmorphic */}
+                      {openGithubMenuId === p.id && (
+                        <div className="absolute bottom-full left-0 mb-2 z-20 min-w-[150px] overflow-hidden rounded-2xl border border-border/80 bg-background/95 p-1 shadow-xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200">
+                          <a
+                            href={p.github.frontend}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setOpenGithubMenuId(null)}
+                            className="flex items-center gap-2 rounded-xl px-3 py-2 text-xs text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                          >
+                            <Code2 className="h-3.5 w-3.5" />
+                            Frontend
+                          </a>
+                          <a
+                            href={p.github.backend}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setOpenGithubMenuId(null)}
+                            className="flex items-center gap-2 rounded-xl px-3 py-2 text-xs text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                          >
+                            <Terminal className="h-3.5 w-3.5" />
+                            Backend
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <a
+                      href={p.github ?? "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-border/60 bg-background/40 px-3.5 py-1.5 text-xs font-medium text-foreground transition-all hover:border-primary/40 hover:bg-card/70"
+                    >
+                      <Github className="h-3.5 w-3.5" />
+                      {t("projects.viewGithub")}
+                    </a>
+                  )}
+
                   <a
                     href={p.demo ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3.5 py-1.5 text-xs font-medium text-primary ring-1 ring-primary/30 transition-all hover:bg-primary/25"
                   >
                     {t("projects.viewDemo")}
@@ -253,12 +321,12 @@ export function Projects() {
 
       {/* ================= MODAL DE PREVIEW (MAC WINDOW EFFECT) ================= */}
       {activeProject && activeProject.image && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background/80 p-4 backdrop-blur-md animate-in fade-in duration-200"
           onClick={() => setActiveProject(null)}
         >
           {/* Top Bar de Controles do Modal */}
-          <div 
+          <div
             className={cn(
               "flex items-center justify-between pb-3 transition-all duration-300",
               viewMode === "pc" ? "w-full max-w-4xl" : "w-full max-w-[340px] xs:max-w-[360px]"
@@ -293,7 +361,7 @@ export function Projects() {
               )}
             </div>
 
-            <button 
+            <button
               onClick={() => setActiveProject(null)}
               className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground backdrop-blur transition-all hover:border-primary/40 hover:text-foreground"
             >
@@ -302,12 +370,12 @@ export function Projects() {
           </div>
 
           {/* Janela do Mac Expandida */}
-          <div 
+          <div
             className={cn(
               "flex flex-col border border-border shadow-2xl transition-all duration-300 rounded-xl bg-background overflow-hidden",
-              viewMode === "pc" 
-                ? "w-full max-w-4xl aspect-[16/10]" 
-                : "w-full max-w-[340px] xs:max-w-[360px] aspect-[9/19.5] max-h-[78vh]" // Altura máxima e proporção exata do iPhone 14 Pro Max
+              viewMode === "pc"
+                ? "w-full max-w-4xl aspect-[16/10]"
+                : "w-full max-w-[340px] xs:max-w-[360px] aspect-[9/19.5] max-h-[78vh]"
             )}
             onClick={(e) => e.stopPropagation()}
           >
@@ -324,13 +392,13 @@ export function Projects() {
               <div className="w-10" />
             </div>
 
-            {/* Imagem em Exibição com Next Image original de volta ao 'fill' */}
-<div 
-  className={cn(
-    "relative w-full flex-1 overflow-y-auto custom-scrollbar transition-colors duration-300",
-    viewMode === "pc" ? "bg-neutral-950" : "bg-white"
-  )}
->
+            {/* Imagem em Exibição com Mudança de Background Dinâmica */}
+            <div
+              className={cn(
+                "relative w-full flex-1 overflow-y-auto custom-scrollbar transition-colors duration-300",
+                viewMode === "pc" ? "bg-neutral-950" : "bg-white"
+              )}
+            >
               <Image
                 src={viewMode === "pc" ? activeProject.image : (activeProject.imageMobile || activeProject.image)}
                 alt={t(activeProject.titleKey)}
@@ -338,14 +406,14 @@ export function Projects() {
                 sizes={viewMode === "pc" ? "(max-width: 1024px) 100vw, 1024px" : "360px"}
                 className={cn(
                   "object-top",
-                  viewMode === "pc" ? "object-cover" : "object-contain" // Contain impede qualquer corte lateral e mantém o aspecto do print
+                  viewMode === "pc" ? "object-cover" : "object-contain"
                 )}
                 quality={95}
                 priority
               />
             </div>
           </div>
-          
+
           <p className="mt-3 font-mono text-[9px] text-muted-foreground/50 tracking-wider">
             ESC PARA FECHAR
           </p>
