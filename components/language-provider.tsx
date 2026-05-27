@@ -81,7 +81,7 @@ const pt: Dict = {
   "projects.tcc": "TCC Project",
   "projects.viewGithub": "GitHub",
   "projects.viewDemo": "Demo",
-  "projects.imageSoon": "Screenshot em breve",
+  "projects.imageSoon": "Imagem do projeto em breve",
   "projects.highlights": "Destaques",
 
   "p1.title": "Katallo Platform",
@@ -188,7 +188,7 @@ const en: Dict = {
   "projects.tcc": "TCC Project",
   "projects.viewGithub": "GitHub",
   "projects.viewDemo": "Demo",
-  "projects.imageSoon": "Screenshot coming soon",
+  "projects.imageSoon": "Image of the project coming soon.",
   "projects.highlights": "Highlights",
 
   "p1.title": "Katallo Platform",
