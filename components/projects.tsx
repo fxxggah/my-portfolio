@@ -21,7 +21,7 @@ type Project = {
   demo?: string
   tcc?: boolean
   image?: string
-  imageMobile?: string // <-- Adicionado suporte opcional para print mobile
+  imageMobile?: string
 }
 
 const projects: Project[] = [
@@ -34,6 +34,8 @@ const projects: Project[] = [
     statusTone: "dev",
     highlights: ["JWT Authentication", "Google OAuth", "Shopping Cart", "WhatsApp Integration", "Modern fullstack"],
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Java", "Spring Boot", "JWT", "MySQL", "Docker"],
+    image: "/katallo-pc.png",        
+    imageMobile: "/katallo-mobile.png", 
   },
   {
     id: "clickjob",
@@ -46,7 +48,7 @@ const projects: Project[] = [
     highlights: ["Job system", "Applications", "JWT Security", "Layered architecture", "REST API"],
     stack: ["Next.js", "React", "TypeScript", "Java", "Spring Boot", "JWT", "MySQL"],
     image: "/clickjob-pc.png",
-    imageMobile: "/clickjob-mobile.png", // <-- Injetada sua imagem mobile aqui
+    imageMobile: "/clickjob-mobile.png",
   },
   {
     id: "stock",
@@ -253,38 +255,39 @@ export function Projects() {
       {activeProject && activeProject.image && (
         <div 
           className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background/80 p-4 backdrop-blur-md animate-in fade-in duration-200"
-          onClick={() => setActiveProject(null)} // Fecha clicando fora
+          onClick={() => setActiveProject(null)}
         >
-          {/* Botão Superior para Fechar e Controles de Versão (PC/Mobile) */}
+          {/* Top Bar de Controles do Modal */}
           <div 
-            className="flex w-full max-w-4xl items-center justify-between pb-4"
+            className={cn(
+              "flex items-center justify-between pb-3 transition-all duration-300",
+              viewMode === "pc" ? "w-full max-w-4xl" : "w-full max-w-[340px] xs:max-w-[360px]"
+            )}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-2">
-              <h4 className="text-sm font-medium tracking-wide text-foreground">
-                {t(activeProject.titleKey)} Preview
+              <h4 className="text-xs font-medium tracking-wide text-foreground truncate max-w-[120px] xs:max-w-none">
+                {t(activeProject.titleKey)}
               </h4>
               {activeProject.imageMobile && (
-                <div className="ml-4 flex items-center gap-1 rounded-full border border-border bg-card/50 p-1 backdrop-blur">
+                <div className="ml-2 flex items-center gap-1 rounded-full border border-border bg-card/50 p-0.5 backdrop-blur">
                   <button
                     onClick={() => setViewMode("pc")}
                     className={cn(
-                      "inline-flex h-7 w-7 items-center justify-center rounded-full transition-all",
+                      "inline-flex h-6 w-6 items-center justify-center rounded-full transition-all",
                       viewMode === "pc" ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
                     )}
-                    title="Ver versão PC"
                   >
-                    <Monitor className="h-3.5 w-3.5" />
+                    <Monitor className="h-3 w-3" />
                   </button>
                   <button
                     onClick={() => setViewMode("mobile")}
                     className={cn(
-                      "inline-flex h-7 w-7 items-center justify-center rounded-full transition-all",
+                      "inline-flex h-6 w-6 items-center justify-center rounded-full transition-all",
                       viewMode === "mobile" ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
                     )}
-                    title="Ver versão Mobile"
                   >
-                    <Smartphone className="h-3.5 w-3.5" />
+                    <Smartphone className="h-3 w-3" />
                   </button>
                 </div>
               )}
@@ -292,50 +295,59 @@ export function Projects() {
 
             <button 
               onClick={() => setActiveProject(null)}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground backdrop-blur transition-all hover:border-primary/40 hover:text-foreground hover:scale-105"
+              className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground backdrop-blur transition-all hover:border-primary/40 hover:text-foreground"
             >
-              <X className="h-4 w-4" />
+              <X className="h-3.5 w-3.5" />
             </button>
           </div>
 
           {/* Janela do Mac Expandida */}
           <div 
             className={cn(
-              "flex flex-col border border-border bg-background shadow-2xl overflow-hidden transition-all duration-300 rounded-xl",
-              viewMode === "pc" ? "w-full max-w-4xl aspect-[16/10]" : "w-[320px] aspect-[9/16]"
+              "flex flex-col border border-border shadow-2xl transition-all duration-300 rounded-xl bg-background overflow-hidden",
+              viewMode === "pc" 
+                ? "w-full max-w-4xl aspect-[16/10]" 
+                : "w-full max-w-[340px] xs:max-w-[360px] aspect-[9/19.5] max-h-[78vh]" // Altura máxima e proporção exata do iPhone 14 Pro Max
             )}
-            onClick={(e) => e.stopPropagation()} // Impede fechar ao clicar na janela
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Barra do Mac */}
-            <div className="flex h-9 items-center bg-card border-b border-border/60 px-4 gap-2 flex-none justify-between">
+            <div className="flex h-8 items-center bg-card border-b border-border/40 px-3 gap-1.5 flex-none justify-between">
               <div className="flex gap-1.5">
-                <button onClick={() => setActiveProject(null)} className="h-3 w-3 rounded-full bg-[#FF5F56] hover:opacity-80 transition-opacity" />
-                <div className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
-                <div className="h-3 w-3 rounded-full bg-[#27C93F]" />
+                <button onClick={() => setActiveProject(null)} className="h-2.5 w-2.5 rounded-full bg-[#FF5F56] hover:opacity-80 transition-opacity" />
+                <div className="h-2.5 w-2.5 rounded-full bg-[#FFBD2E]" />
+                <div className="h-2.5 w-2.5 rounded-full bg-[#27C93F]" />
               </div>
-              <div className="font-mono text-[10px] text-muted-foreground/80 select-none">
-                {viewMode === "pc" ? "clickjob.com" : "clickjob.com"}
+              <div className="font-mono text-[9px] text-muted-foreground/80 select-none tracking-wide">
+                {"gabrieloliveira.dev"}
               </div>
-              <div className="w-12" /> {/* Spacer para centralizar o texto */}
+              <div className="w-10" />
             </div>
 
-            {/* Imagem em exibição de acordo com o Toggle (PC ou Mobile) */}
-            <div className="relative w-full flex-1 bg-neutral-950 overflow-y-auto custom-scrollbar">
+            {/* Imagem em Exibição com Next Image original de volta ao 'fill' */}
+<div 
+  className={cn(
+    "relative w-full flex-1 overflow-y-auto custom-scrollbar transition-colors duration-300",
+    viewMode === "pc" ? "bg-neutral-950" : "bg-white"
+  )}
+>
               <Image
                 src={viewMode === "pc" ? activeProject.image : (activeProject.imageMobile || activeProject.image)}
                 alt={t(activeProject.titleKey)}
                 fill
+                sizes={viewMode === "pc" ? "(max-width: 1024px) 100vw, 1024px" : "360px"}
                 className={cn(
-                  "object-cover",
-                  viewMode === "pc" ? "object-top" : "object-contain"
+                  "object-top",
+                  viewMode === "pc" ? "object-cover" : "object-contain" // Contain impede qualquer corte lateral e mantém o aspecto do print
                 )}
                 quality={95}
+                priority
               />
             </div>
           </div>
           
-          <p className="mt-4 font-mono text-[10px] text-muted-foreground/60 tracking-wider">
-            DICA: VOCÊ TAMBÉM PODE PRESSIONAR [ESC] PARA FECHAR
+          <p className="mt-3 font-mono text-[9px] text-muted-foreground/50 tracking-wider">
+            ESC PARA FECHAR
           </p>
         </div>
       )}
