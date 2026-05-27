@@ -43,7 +43,7 @@ const pt: Dict = {
   "about.eyebrow": "Sobre Mim",
   "about.title": "Engenharia, solução e tecnologia.",
   "about.p1":
-    "Minha jornada na tecnologia começou movida pela vontade de trabalhar com oque eu amo e poder agregar valor real e rapidamente se transformou em uma ambição clara: construir soluções reais através da engenharia de software.",
+    "Minha jornada na tecnologia começou movida pela vontade de trabalhar com oque eu amo e poder agregar valor real e rapidamente se transformou em uma ambição clara: construir soluções reais através da tecnologia.",
   "about.p2":
     "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de soluções de ponta a ponta.",
   "about.p3":

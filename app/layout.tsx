@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Gabriel Oliveira — Software Developer",
     description:
-      "Transformando ideias em soluções reais através de engenharia de software e tecnologia.",
+      "Transformando ideias em soluções reais através de engenharia de software e da tecnologia.",
     siteName: "Gabriel Oliveira",
     locale: "pt_BR",
   },
