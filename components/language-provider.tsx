@@ -19,7 +19,7 @@ const pt: Dict = {
 
   // hero
   "hero.eyebrow": "Disponível para novas oportunidades",
-  "hero.title": "Software Engineer & Full Stack Developer",
+  "hero.title": "Desenvolvedor Backend",
   "hero.headline":
     "Transformando ideias em produtos reais através de engenharia de software, visão de negócio e tecnologia moderna.",
   "hero.sub":
@@ -131,7 +131,7 @@ const en: Dict = {
   "loading.text": "Initializing experience",
 
   "hero.eyebrow": "Available for new opportunities",
-  "hero.title": "Software Engineer & Full Stack Developer",
+  "hero.title": "Backend Developer",
   "hero.headline":
     "Turning ideas into real products through software engineering, business vision and modern technology.",
   "hero.sub":

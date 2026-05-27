@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gabriel Oliveira — Software Engineer & Full Stack Developer",
+    title: "Gabriel Oliveira — Backend Developer",
     description: "Backend first. Product driven. Building real-world scalable products.",
   },
   generator: "v0.app",

@@ -48,7 +48,6 @@ export function Hero() {
               </p>
               <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-[4.25rem]">
                 <span className="block">{t("hero.title").split("&")[0].trim()}</span>
-                <span className="block text-gradient">& {t("hero.title").split("&")[1]?.trim()}</span>
               </h1>
               <p className="text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg max-w-xl">
                 {t("hero.headline")}
@@ -125,13 +124,6 @@ export function Hero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
 
-                {/* Floating tags */}
-                <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-1 backdrop-blur">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-foreground">
-                    Live
-                  </span>
-                </div>
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl bg-background/70 px-3 py-2 backdrop-blur">
                   <div className="flex flex-col leading-tight">
                     <span className="text-xs font-semibold text-foreground">Gabriel Oliveira</span>
@@ -139,7 +131,6 @@ export function Hero() {
                       SE Student · Brazil
                     </span>
                   </div>
-                  <span className="font-mono text-[10px] text-primary">v1.0</span>
                 </div>
               </div>
 
@@ -149,12 +140,6 @@ export function Hero() {
                   Stack
                 </span>
                 <span className="text-xs font-semibold text-foreground">Java · Spring</span>
-              </div>
-              <div className="absolute -left-6 bottom-16 hidden sm:flex flex-col items-start rounded-xl border border-border/60 glass px-3 py-2 shadow-xl">
-                <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">
-                  Focus
-                </span>
-                <span className="text-xs font-semibold text-foreground">Backend · Product</span>
               </div>
             </div>
           </div>
