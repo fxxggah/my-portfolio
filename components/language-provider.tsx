@@ -41,13 +41,13 @@ const pt: Dict = {
 
   // about
   "about.eyebrow": "Sobre Mim",
-  "about.title": "Engenharia, produto e visão.",
+  "about.title": "Engenharia, solução e tecnologia.",
   "about.p1":
     "Minha jornada na tecnologia começou movida pela vontade de trabalhar com oque eu amo e poder agregar valor real e rapidamente se transformou em uma ambição clara: construir soluções reais através da engenharia de software.",
   "about.p2":
     "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de soluções de ponta a ponta.",
   "about.p3":
-    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de soluções digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, escalabilidade e visão de negócio.",
+    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de soluções digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, escalabilidade e na visão de negócio.",
   "about.p4":
     "Busco constantemente evolução técnica e profissional, com o objetivo de atuar em projetos de alto nível, oportunidades internacionais e desenvolvimento de soluções que gerem impacto real.",
   "about.p5":

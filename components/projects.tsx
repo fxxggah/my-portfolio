@@ -92,14 +92,11 @@ export function Projects() {
   const { t } = useLanguage()
   const ref = useReveal<HTMLDivElement>()
 
-  // Estados para controlar o Modal de visualização da imagem
   const [activeProject, setActiveProject] = React.useState<Project | null>(null)
   const [viewMode, setViewMode] = React.useState<"pc" | "mobile">("pc")
 
-  // Estado para controlar qual menu de repositórios do Github está aberto por ID do projeto
   const [openGithubMenuId, setOpenGithubMenuId] = React.useState<string | null>(null)
 
-  // Função para abrir o modal resetando a visão para PC primeiro
   const openModal = (project: Project) => {
     setActiveProject(project)
     setViewMode("pc")
