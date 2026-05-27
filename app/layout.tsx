@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   creator: "Gabriel Oliveira",
   openGraph: {
     type: "website",
-    title: "Gabriel Oliveira — Software Developer",
+    title: "Gabriel Oliveira - Software Developer",
     description:
       "Transformando ideias em soluções reais através de engenharia de software e da tecnologia.",
     siteName: "Gabriel Oliveira",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gabriel Oliveira — Backend Developer",
+    title: "Gabriel Oliveira - Backend Developer",
     description: "Backend first. Product driven. Building real-world scalable products.",
   },
   generator: "v0.app",
