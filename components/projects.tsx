@@ -387,7 +387,7 @@ export function Projects() {
                 <div className="h-2.5 w-2.5 rounded-full bg-[#27C93F]" />
               </div>
               <div className="font-mono text-[9px] text-muted-foreground/80 select-none tracking-wide">
-                {"gabrieloliveira.dev"}
+                {"gabriel-oliveira.dev"}
               </div>
               <div className="w-10" />
             </div>
