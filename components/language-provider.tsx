@@ -43,11 +43,11 @@ const pt: Dict = {
   "about.eyebrow": "Sobre Mim",
   "about.title": "Engenharia, produto e visão.",
   "about.p1":
-    "Minha jornada na tecnologia começou movida pela curiosidade e rapidamente se transformou em uma ambição clara: construir soluções reais através da engenharia de software.",
+    "Minha jornada na tecnologia começou movida pela vontade de trabalhar com oque eu amo e poder agregar valor real e rapidamente se transformou em uma ambição clara: construir soluções reais através da engenharia de software.",
   "about.p2":
-    "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend modernas, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de soluções de ponta a ponta.",
+    "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de soluções de ponta a ponta.",
   "about.p3":
-    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de soluções digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, experiência do usuário, escalabilidade e visão de negócio.",
+    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de soluções digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, escalabilidade e visão de negócio.",
   "about.p4":
     "Busco constantemente evolução técnica e profissional, com o objetivo de atuar em projetos de alto nível, oportunidades internacionais e desenvolvimento de soluções que gerem impacto real.",
   "about.p5":
@@ -75,7 +75,7 @@ const pt: Dict = {
   "projects.title": "Construindo com propósito.",
   "projects.desc":
     "Uma seleção de projetos que refletem minha mentalidade de engenharia, foco em backend e visão de produto.",
-  "projects.status.dev": "Em desenvolvimento",
+  "projects.status.dev": "Fase de deploy",
   "projects.status.mvp": "MVP",
   "projects.status.done": "Concluído",
   "projects.tcc": "TCC Project",
@@ -137,7 +137,7 @@ const en: Dict = {
   "hero.sub":
     "Software Engineering student focused on modern backend, system architecture and scalable digital product development.",
   "hero.long":
-    "I'm 18 years old and passionate about technology, software engineering and building real solutions. I currently focus my studies on backend with Java and Spring Boot, while exploring modern frontend to develop complete, scalable and well-structured applications. More than just writing code, I aim to understand business, user experience and how technology can create real impact.",
+    "I'm 18 years old and passionate about technology, software engineering, and building real-world solutions. Currently, I'm focusing my studies on backend development with Java and Spring Boot, while exploring modern frontend development to create complete, scalable, and well-structured applications. More than just writing code, I seek to understand business and how technology can generate real results.",
   "hero.cta.projects": "View Projects",
   "hero.cta.contact": "Get in Touch",
   "hero.cta.cv": "Download CV",
@@ -154,11 +154,11 @@ const en: Dict = {
   "about.eyebrow": "About Me",
   "about.title": "Engineering, product and vision.",
   "about.p1":
-    "My journey in technology began driven by curiosity and quickly turned into a clear ambition: to build real solutions through software engineering.",
+    "My journey in technology began driven by the desire to work with what I love and to add real value, and quickly transformed into a clear ambition: to build real solutions through software engineering.",
   "about.p2":
-    "I'm currently a Software Engineering student and concentrate my studies mainly on the Java and Spring Boot ecosystem, developing modern backend applications, secure REST APIs and scalable architectures. At the same time, I also explore frontend technologies like React, Next.js and TypeScript to understand end-to-end product development.",
+    "I am currently a Software Engineering student and I focus my studies mainly on the Java and Spring Boot ecosystem, developing backend applications, secure REST APIs, and scalable architectures. At the same time, I also explore frontend technologies such as React, Next.js, and TypeScript to understand end-to-end solution development.",
   "about.p3":
-    "I have a strong interest in software architecture, well-structured systems and digital products that solve real problems. I like to look beyond code — also understanding product, user experience, scalability and business vision.",
+    "I have a strong interest in software architecture, well-structured systems, and building digital solutions that truly solve problems. I like to look beyond the code, understanding the product, scalability, and business vision as well.",
   "about.p4":
     "I constantly seek technical and professional growth, aiming to work on high-level projects, international opportunities and solutions that generate real impact.",
   "about.p5": "I believe technology goes far beyond tools: it is the ability to turn ideas into reality.",
@@ -182,7 +182,7 @@ const en: Dict = {
   "projects.title": "Building with purpose.",
   "projects.desc":
     "A selection of projects that reflect my engineering mindset, backend focus and product vision.",
-  "projects.status.dev": "In development",
+  "projects.status.dev": "Final phase of deployment",
   "projects.status.mvp": "MVP",
   "projects.status.done": "Completed",
   "projects.tcc": "TCC Project",
