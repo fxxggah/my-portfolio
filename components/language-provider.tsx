@@ -80,7 +80,6 @@ const pt: Dict = {
   "projects.status.done": "Concluído",
   "projects.tcc": "TCC Project",
   "projects.viewGithub": "GitHub",
-  "projects.viewDemo": "Demo",
   "projects.imageSoon": "Imagem do projeto em breve",
   "projects.highlights": "Destaques",
 
@@ -187,7 +186,6 @@ const en: Dict = {
   "projects.status.done": "Completed",
   "projects.tcc": "TCC Project",
   "projects.viewGithub": "GitHub",
-  "projects.viewDemo": "Demo",
   "projects.imageSoon": "Image of the project coming soon.",
   "projects.highlights": "Highlights",
 

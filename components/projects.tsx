@@ -303,15 +303,16 @@ export function Projects() {
                     </a>
                   )}
 
-                  <a
-                    href={p.demo ?? "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3.5 py-1.5 text-xs font-medium text-primary ring-1 ring-primary/30 transition-all hover:bg-primary/25"
-                  >
-                    {t("projects.viewDemo")}
-                    <ArrowUpRight className="h-3.5 w-3.5" />
-                  </a>
+                  {/* <a
+  href={p.demo ?? "#"}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3.5 py-1.5 text-xs font-medium text-primary ring-1 ring-primary/30 transition-all hover:bg-primary/25"
+>
+  {t("projects.viewDemo")}
+  <ArrowUpRight className="h-3.5 w-3.5" />
+</a> */}
+
                 </div>
               </div>
             </article>
@@ -387,7 +388,7 @@ export function Projects() {
                 <div className="h-2.5 w-2.5 rounded-full bg-[#27C93F]" />
               </div>
               <div className="font-mono text-[9px] text-muted-foreground/80 select-none tracking-wide">
-                {"gabriel-oliveira.dev"}
+                {"gabrieloliveira.dev"}
               </div>
               <div className="w-10" />
             </div>
