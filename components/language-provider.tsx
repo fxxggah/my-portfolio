@@ -267,8 +267,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const downloadCV = React.useCallback(() => {
     if (typeof window !== "undefined") {
       const link = document.createElement("a")
-      link.href = "/gabriel-oliveira-dev-curriculo.pdf"
-      link.download = "Gabriel_Oliveira_da_Silva_CV.pdf"
+      link.href = "/cv-gabriel-oliveira.pdf"
+      link.download = "cv-gabriel-oliveira.pdf"
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
