@@ -32,7 +32,7 @@ const projects: Project[] = [
     longKey: "p1.long",
     statusKey: "projects.status.dev",
     statusTone: "dev",
-    highlights: ["JWT Authentication", "Google OAuth", "Shopping Cart", "WhatsApp Integration", "Modern fullstack"],
+    highlights: ["p1.h1", "p1.h2", "p1.h3", "p1.h4", "p1.h5"],
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Java", "Spring Boot", "JWT", "MySQL", "Docker"],
     image: "/katallo-pc.png",
     imageMobile: "/katallo-mobile.png",
@@ -49,7 +49,7 @@ const projects: Project[] = [
     statusKey: "projects.status.mvp",
     statusTone: "mvp",
     tcc: true,
-    highlights: ["Job system", "Applications", "JWT Security", "Layered architecture", "REST API"],
+    highlights: ["p2.h1", "p2.h2", "p2.h3", "p2.h4", "p2.h5"],
     stack: ["Next.js", "React", "TypeScript", "Java", "Spring Boot", "JWT", "MySQL"],
     image: "/clickjob-pc.png",
     imageMobile: "/clickjob-mobile.png",
@@ -65,7 +65,7 @@ const projects: Project[] = [
     longKey: "p3.long",
     statusKey: "projects.status.done",
     statusTone: "done",
-    highlights: ["Java 17", "Spring Boot", "Docker", "Layered arch.", "Automated tests"],
+    highlights: ["p3.h1", "p3.h2", "p3.h3", "p3.h4", "p3.h5"],
     stack: ["Java 17", "Spring Boot", "MySQL", "Docker", "JUnit"],
     github: "https://github.com/fxxggah/api-inventory-management"
   },
@@ -76,7 +76,7 @@ const projects: Project[] = [
     longKey: "p4.long",
     statusKey: "projects.status.done",
     statusTone: "done",
-    highlights: ["JWT", "Refresh Token", "Spring Security", "Docker", "MySQL"],
+    highlights: ["p4.h1", "p4.h2", "p4.h3", "p4.h4", "p4.h5"],
     stack: ["Java", "Spring Boot", "JWT", "MySQL", "Docker"],
     github: "https://github.com/fxxggah/spring-auth-api"
   },
@@ -222,13 +222,13 @@ export function Projects() {
                     {t("projects.highlights")}
                   </div>
                   <ul className="mt-2 flex flex-wrap gap-1.5">
-                    {p.highlights.map((h) => (
+                    {p.highlights.map((hKey) => (
                       <li
-                        key={h}
+                        key={hKey}
                         className="inline-flex items-center gap-1 rounded-full border border-border/60 bg-background/40 px-2.5 py-0.5 text-[11px] text-muted-foreground"
                       >
                         <Sparkles className="h-2.5 w-2.5 text-primary" />
-                        {h}
+                        {t(hKey)}
                       </li>
                     ))}
                   </ul>
@@ -299,17 +299,6 @@ export function Projects() {
                       {t("projects.viewGithub")}
                     </a>
                   )}
-
-                  {/* <a
-  href={p.demo ?? "#"}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3.5 py-1.5 text-xs font-medium text-primary ring-1 ring-primary/30 transition-all hover:bg-primary/25"
->
-  {t("projects.viewDemo")}
-  <ArrowUpRight className="h-3.5 w-3.5" />
-</a> */}
-
                 </div>
               </div>
             </article>
@@ -390,7 +379,7 @@ export function Projects() {
               <div className="w-10" />
             </div>
 
-            {/* Imagem em Exibição com Mudança de Background Dinâmica */}
+            {/* Imagem em Exibição */}
             <div
               className={cn(
                 "relative w-full flex-1 overflow-y-auto custom-scrollbar transition-colors duration-300",

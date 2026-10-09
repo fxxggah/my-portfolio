@@ -7,23 +7,24 @@ import { useLanguage } from "@/components/language-provider"
 import { useReveal } from "@/hooks/use-reveal"
 import { cn } from "@/lib/utils"
 
-const PHRASES = [
-  "Building scalable solutions.",
-  "Engineering ideas into reality.",
-  "Focused on real-world products.",
-  "Thinking beyond code.",
-  "Backend first. Product driven.",
-  "Building with purpose.",
-  "Learning. Building. Evolving.",
-  "Creating technology with vision.",
-]
-
 export function Hero() {
   const { t, downloadCV } = useLanguage()
   const ref = useReveal<HTMLDivElement>()
+
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
   }
+
+  const phrases = React.useMemo(() => [
+    t("hero.marquee.1"),
+    t("hero.marquee.2"),
+    t("hero.marquee.3"),
+    t("hero.marquee.4"),
+    t("hero.marquee.5"),
+    t("hero.marquee.6"),
+    t("hero.marquee.7"),
+    t("hero.marquee.8"),
+  ], [t])
 
   return (
     <section id="home" className="relative pt-32 sm:pt-40 pb-24 overflow-hidden">
@@ -174,7 +175,7 @@ export function Hero() {
       {/* Marquee */}
       <div className="mt-20 border-y border-border/60 bg-card/30 backdrop-blur overflow-hidden">
         <div className="flex w-max animate-marquee gap-12 py-4 font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground/70">
-          {[...PHRASES, ...PHRASES].map((p, i) => (
+          {[...phrases, ...phrases].map((p, i) => (
             <span key={i} className="flex items-center gap-12">
               <span>{p}</span>
               <span className="h-1 w-1 rounded-full bg-primary/60" />

@@ -8,6 +8,7 @@ type Dict = Record<string, string>
 
 const pt: Dict = {
   // nav
+  "nav.subtitle": "Desenvolvedor Backend",
   "nav.home": "Home",
   "nav.about": "Sobre",
   "nav.skills": "Skills",
@@ -29,21 +30,34 @@ const pt: Dict = {
   "hero.cta.projects": "Ver Projetos",
   "hero.cta.contact": "Entrar em Contato",
   "hero.cta.cv": "Download CV",
-  "hero.badge.opentowork": "Open to Work",
-  "hero.badge.freelance": "Available for Freelance",
-  "hero.badge.products": "Building Real Solutions",
-  "hero.badge.backend": "Backend Focused",
-  "hero.badge.engineering": "Engineering Mindset",
-  "hero.stat.projects": "Featured Projects",
-  "hero.stat.backend": "Backend Focused",
-  "hero.stat.fullstack": "Full Stack Projects",
-  "hero.stat.learning": "Always Learning",
+
+  // badges
+  "hero.badge.opentowork": "Disponível para Trabalho",
+  "hero.badge.freelance": "Disponível para Freelance",
+  "hero.badge.products": "Construindo Soluções Reais",
+  "hero.badge.backend": "Foco em Backend",
+  "hero.badge.engineering": "Mentalidade de Engenharia",
+
+  "hero.stat.projects": "Projetos em Destaque",
+  "hero.stat.backend": "Foco em Backend",
+  "hero.stat.fullstack": "Projetos Full Stack",
+  "hero.stat.learning": "Sempre Aprendendo",
+
+  // carrosel
+  "hero.marquee.1": "Construindo soluções escaláveis.",
+  "hero.marquee.2": "Transformando ideias em realidade.",
+  "hero.marquee.3": "Foco em produtos do mundo real.",
+  "hero.marquee.4": "Pensando além do código.",
+  "hero.marquee.5": "Backend primeiro. Foco em produto.",
+  "hero.marquee.6": "Construindo com propósito.",
+  "hero.marquee.7": "Aprendendo. Construindo. Evoluindo.",
+  "hero.marquee.8": "Criando tecnologia com visão.",
 
   // about
   "about.eyebrow": "Sobre Mim",
   "about.title": "Engenharia, solução e tecnologia.",
   "about.p1":
-    "Minha jornada na tecnologia começou movida pela vontade de trabalhar com oque eu amo e poder agregar valor real e rapidamente se transformou em uma ambição clara: construir soluções reais através da tecnologia.",
+    "Minha jornada na tecnologia começou movida pela vontade de trabalhar com o que eu amo e poder agregar valor real e rapidamente se transformou em uma ambição clara: construir soluções reais através da tecnologia.",
   "about.p2":
     "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de soluções de ponta a ponta.",
   "about.p3":
@@ -52,13 +66,14 @@ const pt: Dict = {
     "Busco constantemente evolução técnica e profissional, com o objetivo de atuar em projetos de alto nível, oportunidades internacionais e desenvolvimento de soluções que gerem impacto real.",
   "about.p5":
     "Acredito que tecnologia vai muito além de ferramentas: ela é a capacidade de transformar ideias em realidade.",
-  "about.card.backend.title": "Backend Engineering",
+  "about.quote": "Focado em backend e construindo com propósito.",
+  "about.card.backend.title": "Engenharia de Backend",
   "about.card.backend.desc": "APIs REST seguras, escaláveis e bem estruturadas com Java e Spring Boot.",
-  "about.card.fullstack.title": "Full Stack Development",
-  "about.card.fullstack.desc": "Solções completas de ponta a ponta, do banco de dados à interface.",
-  "about.card.architecture.title": "Software Architecture",
+  "about.card.fullstack.title": "Desenvolvimento Full Stack",
+  "about.card.fullstack.desc": "Soluções completas de ponta a ponta, do banco de dados à interface.",
+  "about.card.architecture.title": "Arquitetura de Software",
   "about.card.architecture.desc": "Sistemas em camadas, organizados, sustentáveis e prontos para crescer.",
-  "about.card.product.title": "Product Vision",
+  "about.card.product.title": "Visão de Produto",
   "about.card.product.desc": "Pensar além do código: negócio, usuário e impacto real.",
 
   // skills
@@ -78,30 +93,46 @@ const pt: Dict = {
   "projects.status.dev": "Fase de deploy",
   "projects.status.mvp": "MVP",
   "projects.status.done": "Concluído",
-  "projects.tcc": "TCC Project",
+  "projects.tcc": "Projeto de TCC",
   "projects.viewGithub": "GitHub",
   "projects.imageSoon": "Imagem do projeto em breve",
   "projects.highlights": "Destaques",
-
-  "p1.title": "Katallo Platform",
-  "p1.short": "Platform integrated with WhatsApp.",
+  "p1.h1": "Autenticação JWT",
+  "p1.h2": "Google OAuth",
+  "p1.h3": "Carrinho de Compras",
+  "p1.h4": "Integração WhatsApp",
+  "p1.h5": "Fullstack Moderno",
+  "p2.h1": "Sistema de Vagas",
+  "p2.h2": "Candidaturas",
+  "p2.h3": "Segurança com JWT",
+  "p2.h4": "Arquitetura em Camadas",
+  "p2.h5": "API REST",
+  "p3.h1": "Java 17",
+  "p3.h2": "Spring Boot",
+  "p3.h3": "Docker",
+  "p3.h4": "Arquitetura em Camadas",
+  "p3.h5": "Testes Automatizados",
+  "p4.h1": "JWT",
+  "p4.h2": "Refresh Token",
+  "p4.h3": "Spring Security",
+  "p4.h4": "Docker",
+  "p4.h5": "MySQL",
+  "p1.title": "Katallo",
+  "p1.short": "Plataforma para pequenos comércios venderem pelo WhatsApp.",
   "p1.long":
     "Katallo é uma plataforma projetada para conectar catálogos online diretamente ao WhatsApp. O projeto combina uma experiência moderna no frontend com um backend robusto responsável por autenticação, gerenciamento de produtos, categorias e analytics.",
-
   "p2.title": "ClickJob",
-  "p2.short": "Freelancer platform focused on connecting talent and opportunities.",
+  "p2.short": "Plataforma para freelancers focada em conectar talentos e oportunidades.",
   "p2.long":
     "Plataforma fullstack desenvolvida como TCC para conectar profissionais freelancers e contratantes. O sistema integra frontend moderno e tipado com backend robusto estruturado em arquitetura em camadas.",
-
   "p3.title": "API REST — Gerenciamento de Estoque",
-  "p3.short": "REST API for stock and product management.",
+  "p3.short": "API REST para gerenciamento de estoque e produtos.",
   "p3.long":
     "API REST desenvolvida em Java 17 e Spring Boot focada no gerenciamento eficiente de produtos e categorias, aplicando boas práticas de arquitetura backend, testes automatizados e containerização.",
-
   "p4.title": "API de Autenticação",
-  "p4.short": "JWT authentication API with access and refresh tokens.",
+  "p4.short": "API de autenticação JWT com tokens de acesso e refresh.",
   "p4.long":
-    "API de autenticação desenvolvida com Spring Boot implementando JWT Authentication com Access Token e Refresh Token, seguindo boas práticas modernas de segurança e arquitetura backend.",
+    "API de autenticação desenvolvida com Spring Boot implementando autenticação JWT com Access Token e Refresh Token, seguindo boas práticas modernas de segurança e arquitetura backend.",
 
   // contact
   "contact.eyebrow": "Contato",
@@ -115,12 +146,13 @@ const pt: Dict = {
   "contact.cta": "Enviar Email",
 
   // footer
-  "footer.main": "Designed & Built by Gabriel Oliveira.",
-  "footer.sub": "Focused on backend engineering, scalable systems and real-world products.",
+  "footer.main": "Desenvolvido & Criado por Gabriel Oliveira.",
+  "footer.sub": "Focado em engenharia de software, sistemas escaláveis e produtos para o mundo real.",
   "footer.rights": "Todos os direitos reservados.",
 }
 
 const en: Dict = {
+  "nav.subtitle": "Backend Developer",
   "nav.home": "Home",
   "nav.about": "About",
   "nav.skills": "Skills",
@@ -150,6 +182,15 @@ const en: Dict = {
   "hero.stat.fullstack": "Full Stack Projects",
   "hero.stat.learning": "Always Learning",
 
+  "hero.marquee.1": "Building scalable solutions.",
+  "hero.marquee.2": "Engineering ideas into reality.",
+  "hero.marquee.3": "Focused on real-world products.",
+  "hero.marquee.4": "Thinking beyond code.",
+  "hero.marquee.5": "Backend first. Product driven.",
+  "hero.marquee.6": "Building with purpose.",
+  "hero.marquee.7": "Learning. Building. Evolving.",
+  "hero.marquee.8": "Creating technology with vision.",
+
   "about.eyebrow": "About Me",
   "about.title": "Engineering, product and vision.",
   "about.p1":
@@ -161,6 +202,7 @@ const en: Dict = {
   "about.p4":
     "I constantly seek technical and professional growth, aiming to work on high-level projects, international opportunities and solutions that generate real impact.",
   "about.p5": "I believe technology goes far beyond tools: it is the ability to turn ideas into reality.",
+  "about.quote": "Backend first and building with purpose.",
   "about.card.backend.title": "Backend Engineering",
   "about.card.backend.desc": "Secure, scalable and well-structured REST APIs with Java and Spring Boot.",
   "about.card.fullstack.title": "Full Stack Development",
@@ -188,11 +230,31 @@ const en: Dict = {
   "projects.viewGithub": "GitHub",
   "projects.imageSoon": "Image of the project coming soon.",
   "projects.highlights": "Highlights",
+  "p1.h1": "JWT Authentication",
+  "p1.h2": "Google OAuth",
+  "p1.h3": "Shopping Cart",
+  "p1.h4": "WhatsApp Integration",
+  "p1.h5": "Modern fullstack",
+  "p2.h1": "Job system",
+  "p2.h2": "Applications",
+  "p2.h3": "JWT Security",
+  "p2.h4": "Layered architecture",
+  "p2.h5": "REST API",
+  "p3.h1": "Java 17",
+  "p3.h2": "Spring Boot",
+  "p3.h3": "Docker",
+  "p3.h4": "Layered arch.",
+  "p3.h5": "Automated tests",
+  "p4.h1": "JWT",
+  "p4.h2": "Refresh Token",
+  "p4.h3": "Spring Security",
+  "p4.h4": "Docker",
+  "p4.h5": "MySQL",
 
-  "p1.title": "Katallo Platform",
-  "p1.short": "Platform integrated with WhatsApp.",
+  "p1.title": "Katallo",
+  "p1.short": "Plataforma para pequenos comércios venderem pelo WhatsApp.",
   "p1.long":
-    "Katallo is a platform designed to connect online catalogs directly to WhatsApp. It combines a modern frontend experience with a robust backend for authentication, product and category management, and analytics.",
+    "Katallo é uma plataforma projetada para conectar catálogos online diretamente ao WhatsApp. O projeto combina uma experiência moderna no frontend com um backend robusto responsável por autenticação, gerenciamento de produtos, categorias e analytics.",
 
   "p2.title": "ClickJob",
   "p2.short": "Freelancer platform focused on connecting talent and opportunities.",

@@ -29,7 +29,7 @@ export function About() {
                   Quote
                 </div>
                 <p className="mt-3 text-balance text-lg font-medium leading-relaxed">
-                  &ldquo;Backend first. Product driven. Building with purpose.&rdquo;
+                  &ldquo;{t("about.quote")}&rdquo;
                 </p>
                 <div className="mt-5 flex items-center gap-2 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
                   <span className="h-px w-6 bg-primary" />
