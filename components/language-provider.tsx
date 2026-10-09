@@ -18,15 +18,18 @@ const pt: Dict = {
   // loading
   "loading.text": "Carregando portfólio",
 
+  // photo
+  "hero.subtitle": "Estudante de ES · Brasil",
+
   // hero
   "hero.eyebrow": "Disponível para novas oportunidades",
   "hero.title": "Desenvolvedor Backend",
   "hero.headline":
-    "Transformando ideias em soluções reais por meio da engenharia de software.",
+    "Transformando ideias em soluções reais através da engenharia de software.",
   "hero.sub":
-    "Estudante de Engenharia de Software focado em backend, arquitetura de sistemas e desenvolvimento de soluções digitais escaláveis.",
+    "Estudante de Engenharia de Software focado em backend, arquitetura de sistemas e desenvolvimento de soluções escaláveis.",
   "hero.long":
-    "Tenho 18 anos e sou apaixonado por tecnologia, engenharia de software e construção de soluções reais. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro frontend moderno para desenvolver aplicações completas, escaláveis e bem estruturadas. Mais do que apenas escrever código, busco entender negócios e como a tecnologia pode gerar resultado real.",
+    "Tenho 18 anos e sou apaixonado por tecnologia. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro o frontend moderno para desenvolver aplicações completas, escaláveis, e bem estruturadas. Mais do que apenas escrever código, busco entender negócios e como a tecnologia pode gerar resultado real.",
   "hero.cta.projects": "Ver Projetos",
   "hero.cta.contact": "Entrar em Contato",
   "hero.cta.cv": "Download CV",
@@ -57,11 +60,11 @@ const pt: Dict = {
   "about.eyebrow": "Sobre Mim",
   "about.title": "Engenharia, solução e tecnologia.",
   "about.p1":
-    "Minha jornada na tecnologia começou movida pela vontade de trabalhar com o que eu amo e poder agregar valor real e rapidamente se transformou em uma ambição clara: construir soluções reais através da tecnologia.",
+    "Minha jornada na tecnologia começou movida pela vontade de trabalhar com o que eu amo e poder realmente agregar valor, rapidamente se transformou em uma ambição clara: construir soluções com a tecnologia.",
   "about.p2":
     "Atualmente sou estudante de Engenharia de Software e concentro meus estudos principalmente no ecossistema Java e Spring Boot, desenvolvendo aplicações backend, APIs REST seguras e arquiteturas escaláveis. Ao mesmo tempo, também exploro tecnologias frontend como React, Next.js e TypeScript para compreender o desenvolvimento de soluções de ponta a ponta.",
   "about.p3":
-    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de soluções digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, escalabilidade e na visão de negócio.",
+    "Tenho grande interesse em arquitetura de software, sistemas bem estruturados e construção de soluções digitais que realmente resolvam problemas. Gosto de enxergar além do código, entendendo também produto, escalabilidade e visão de negócio.",
   "about.p4":
     "Busco constantemente evolução técnica e profissional, com o objetivo de atuar em projetos de alto nível, oportunidades internacionais e desenvolvimento de soluções que gerem impacto real.",
   "about.p5":
@@ -161,12 +164,14 @@ const en: Dict = {
 
   "loading.text": "Initializing experience",
 
+  "hero.subtitle": "ES Student · Brazil",
+
   "hero.eyebrow": "Available for new opportunities",
   "hero.title": "Backend Developer",
   "hero.headline":
     "Transforming ideas into real solutions through software engineering.",
   "hero.sub":
-    "Software Engineering student focused on modern backend, system architecture and scalable digital product development.",
+    "Software Engineering student focused on modern backend, system architecture and scalable product development.",
   "hero.long":
     "I'm 18 years old and passionate about technology, software engineering, and building real-world solutions. Currently, I'm focusing my studies on backend development with Java and Spring Boot, while exploring modern frontend development to create complete, scalable, and well-structured applications. More than just writing code, I seek to understand business and how technology can generate real results.",
   "hero.cta.projects": "View Projects",

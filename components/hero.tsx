@@ -128,7 +128,7 @@ export function Hero() {
                   <div className="flex flex-col leading-tight">
                     <span className="text-xs font-semibold text-foreground">Gabriel Oliveira</span>
                     <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">
-                      SE Student · Brazil
+                      {t("hero.subtitle")}
                     </span>
                   </div>
                 </div>
