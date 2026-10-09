@@ -18,7 +18,7 @@ type Project = {
   highlights: string[]
   stack: string[]
   github?: string | { frontend: string; backend: string }
-  demo?: string
+  site?: string
   tcc?: boolean
   image?: string
   imageMobile?: string
@@ -36,6 +36,7 @@ const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Java", "Spring Boot", "JWT", "MySQL", "Docker"],
     image: "/katallo-pc.png",
     imageMobile: "/katallo-mobile.png",
+    site: "https://katallo.vercel.app",
     github: {
       frontend: "https://github.com/fxxggah/frontend-katallo-platform",
       backend: "https://github.com/fxxggah/backend-katallo-platform"
@@ -66,7 +67,7 @@ const projects: Project[] = [
     statusKey: "projects.status.done",
     statusTone: "done",
     highlights: ["p3.h1", "p3.h2", "p3.h3", "p3.h4", "p3.h5"],
-    stack: ["Java 17", "Spring Boot", "MySQL", "Docker", "JUnit"],
+    stack: ["Java", "Spring Boot", "MySQL", "Docker", "JUnit"],
     github: "https://github.com/fxxggah/api-inventory-management"
   },
   {
@@ -246,7 +247,20 @@ export function Projects() {
                 </div>
 
                 <div className="mt-auto flex items-center gap-2 pt-2">
-                  {/* Botão Dinâmico do GitHub */}
+                  {/* Botão Ver Site / Demo renderizado PRIMEIRO (à esquerda) */}
+                  {p.site && (
+                    <a
+                      href={p.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-full bg-primary/15 px-3.5 py-1.5 text-xs font-medium text-primary ring-1 ring-primary/30 transition-all hover:bg-primary/25"
+                    >
+                      {t("projects.viewSite")}
+                      <ArrowUpRight className="h-3.5 w-3.5" />
+                    </a>
+                  )}
+
+                  {/* Botão Dinâmico do GitHub renderizado DEPOIS (à direita) */}
                   {typeof p.github === "object" ? (
                     <div className="relative" onClick={(e) => e.stopPropagation()}>
                       <button

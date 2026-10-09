@@ -100,6 +100,7 @@ const pt: Dict = {
   "projects.viewGithub": "GitHub",
   "projects.imageSoon": "Imagem do projeto em breve",
   "projects.highlights": "Destaques",
+  "projects.viewSite": "Visitar Site",
   "p1.h1": "Autenticação JWT",
   "p1.h2": "Google OAuth",
   "p1.h3": "Carrinho de Compras",
@@ -110,7 +111,7 @@ const pt: Dict = {
   "p2.h3": "Segurança com JWT",
   "p2.h4": "Arquitetura em Camadas",
   "p2.h5": "API REST",
-  "p3.h1": "Java 17",
+  "p3.h1": "Java",
   "p3.h2": "Spring Boot",
   "p3.h3": "Docker",
   "p3.h4": "Arquitetura em Camadas",
@@ -131,7 +132,7 @@ const pt: Dict = {
   "p3.title": "API REST — Gerenciamento de Estoque",
   "p3.short": "API REST para gerenciamento de estoque e produtos.",
   "p3.long":
-    "API REST desenvolvida em Java 17 e Spring Boot focada no gerenciamento eficiente de produtos e categorias, aplicando boas práticas de arquitetura backend, testes automatizados e containerização.",
+    "API REST desenvolvida em Java e Spring Boot focada no gerenciamento eficiente de produtos e categorias, aplicando boas práticas de arquitetura backend, testes automatizados e containerização.",
   "p4.title": "API de Autenticação",
   "p4.short": "API de autenticação JWT com tokens de acesso e refresh.",
   "p4.long":
@@ -235,6 +236,7 @@ const en: Dict = {
   "projects.viewGithub": "GitHub",
   "projects.imageSoon": "Image of the project coming soon.",
   "projects.highlights": "Highlights",
+  "projects.viewSite": "Visit Site",
   "p1.h1": "JWT Authentication",
   "p1.h2": "Google OAuth",
   "p1.h3": "Shopping Cart",
@@ -245,7 +247,7 @@ const en: Dict = {
   "p2.h3": "JWT Security",
   "p2.h4": "Layered architecture",
   "p2.h5": "REST API",
-  "p3.h1": "Java 17",
+  "p3.h1": "Java",
   "p3.h2": "Spring Boot",
   "p3.h3": "Docker",
   "p3.h4": "Layered arch.",
@@ -269,7 +271,7 @@ const en: Dict = {
   "p3.title": "REST API — Stock Management",
   "p3.short": "REST API for stock and product management.",
   "p3.long":
-    "REST API built with Java 17 and Spring Boot, focused on efficient management of products and categories, applying best practices of backend architecture, automated testing and containerization.",
+    "REST API built with Java and Spring Boot, focused on efficient management of products and categories, applying best practices of backend architecture, automated testing and containerization.",
 
   "p4.title": "Authentication API",
   "p4.short": "JWT authentication API with access and refresh tokens.",
