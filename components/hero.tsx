@@ -115,7 +115,7 @@ export function Hero() {
 
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border/60 glow-blue">
                 <Image
-                  src="/gabriel-profile.jpg"
+                  src="/my/gabriel-profile.jpg"
                   alt="Gabriel Oliveira"
                   fill
                   priority
