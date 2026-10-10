@@ -30,12 +30,12 @@ const projects: Project[] = [
     titleKey: "p1.title",
     shortKey: "p1.short",
     longKey: "p1.long",
-    statusKey: "projects.status.dev",
-    statusTone: "dev",
+    statusKey: "projects.status.done",
+    statusTone: "done",
     highlights: ["p1.h1", "p1.h2", "p1.h3", "p1.h4", "p1.h5"],
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Java", "Spring Boot", "JWT", "MySQL", "Docker"],
-    image: "/katallo-pc.png",
-    imageMobile: "/katallo-mobile.png",
+    image: "/projects/katallo/katallo-desktop.png",
+    imageMobile: "/projects/katallo/katallo-mobile.png",
     site: "https://katallo.vercel.app",
     github: {
       frontend: "https://github.com/fxxggah/frontend-katallo-platform",
@@ -43,32 +43,35 @@ const projects: Project[] = [
     }
   },
   {
-    id: "clickjob",
+    id: "gb-store",
     titleKey: "p2.title",
     shortKey: "p2.short",
     longKey: "p2.long",
+    statusKey: "projects.status.done",
+    statusTone: "done",
+    highlights: ["p2.h1", "p2.h2", "p2.h3", "p2.h4", "p2.h5"],
+    stack: ["Next.js", "React", "TypeScript", "TailwindCSS"],
+    image: "/projects/gb-store/gb-store-desktop.png",
+    imageMobile: "/projects/gb-store/gb-store-mobile.png",
+    site: "https://katallo.vercel.app/gb-games",
+    github: "https://github.com/fxxggah/frontend-katallo-platform/tree/main/templates/gbgames" 
+  },
+  {
+    id: "clickjob",
+    titleKey: "p3.title",
+    shortKey: "p3.short",
+    longKey: "p3.long",
     statusKey: "projects.status.mvp",
     statusTone: "mvp",
     tcc: true,
-    highlights: ["p2.h1", "p2.h2", "p2.h3", "p2.h4", "p2.h5"],
+    highlights: ["p3.h1", "p3.h2", "p3.h3", "p3.h4", "p3.h5"],
     stack: ["Next.js", "React", "TypeScript", "Java", "Spring Boot", "JWT", "MySQL"],
-    image: "/clickjob-pc.png",
-    imageMobile: "/clickjob-mobile.png",
+    image: "/projects/clickjob/clickjob-desktop.png",
+    imageMobile: "/projects/clickjob/clickjob-mobile.png",
     github: {
       frontend: "https://github.com/fxxggah/frontend-freelance-platform",
       backend: "https://github.com/fxxggah/backend-freelance-platform"
     }
-  },
-  {
-    id: "stock",
-    titleKey: "p3.title",
-    shortKey: "p3.short",
-    longKey: "p3.long",
-    statusKey: "projects.status.done",
-    statusTone: "done",
-    highlights: ["p3.h1", "p3.h2", "p3.h3", "p3.h4", "p3.h5"],
-    stack: ["Java", "Spring Boot", "MySQL", "Docker", "JUnit"],
-    github: "https://github.com/fxxggah/api-inventory-management"
   },
   {
     id: "auth",

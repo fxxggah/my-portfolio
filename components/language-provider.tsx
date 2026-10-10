@@ -101,38 +101,46 @@ const pt: Dict = {
   "projects.imageSoon": "Imagem do projeto em breve",
   "projects.highlights": "Destaques",
   "projects.viewSite": "Visitar Site",
+
   "p1.h1": "Autenticação JWT",
   "p1.h2": "Google OAuth",
   "p1.h3": "Carrinho de Compras",
   "p1.h4": "Integração WhatsApp",
   "p1.h5": "Fullstack Moderno",
-  "p2.h1": "Sistema de Vagas",
-  "p2.h2": "Candidaturas",
-  "p2.h3": "Segurança com JWT",
-  "p2.h4": "Arquitetura em Camadas",
-  "p2.h5": "API REST",
-  "p3.h1": "Java",
-  "p3.h2": "Spring Boot",
-  "p3.h3": "Docker",
+
+  "p2.h1": "Next.js",
+  "p2.h2": "TypeScript",
+  "p2.h3": "TailwindCSS",
+  "p2.h4": "Template Moderno",
+  "p2.h5": "Solução Real",
+
+  "p3.h1": "Sistema de Vagas",
+  "p3.h2": "Candidaturas",
+  "p3.h3": "Segurança com JWT",
   "p3.h4": "Arquitetura em Camadas",
-  "p3.h5": "Testes Automatizados",
+  "p3.h5": "API REST",
+
   "p4.h1": "JWT",
   "p4.h2": "Refresh Token",
   "p4.h3": "Spring Security",
   "p4.h4": "Docker",
   "p4.h5": "MySQL",
+  
   "p1.title": "Katallo",
   "p1.short": "Plataforma para pequenos comércios venderem pelo WhatsApp.",
   "p1.long":
     "Katallo é uma plataforma projetada para conectar catálogos online diretamente ao WhatsApp. O projeto combina uma experiência moderna no frontend com um backend robusto responsável por autenticação, gerenciamento de produtos, categorias e analytics.",
-  "p2.title": "ClickJob",
-  "p2.short": "Plataforma para freelancers focada em conectar talentos e oportunidades.",
+  
+  "p2.title": "GB Games Store",
+  "p2.short": "Template da Katallo para uma Loja de Técnologia & Informática.",
   "p2.long":
-    "Plataforma fullstack desenvolvida como TCC para conectar profissionais freelancers e contratantes. O sistema integra frontend moderno e tipado com backend robusto estruturado em arquitetura em camadas.",
-  "p3.title": "API REST — Gerenciamento de Estoque",
-  "p3.short": "API REST para gerenciamento de estoque e produtos.",
+    "Template implementado a plataforma Katallo para a GB Games Store. O projeto demonstra na prática um catálogo de produtos direcionando o cliente até o WhatsApp para a finalização do pedido.",
+    
+  "p3.title": "ClickJob",
+  "p3.short": "Plataforma para freelancers focada em conectar talentos e oportunidades.",
   "p3.long":
-    "API REST desenvolvida em Java e Spring Boot focada no gerenciamento eficiente de produtos e categorias, aplicando boas práticas de arquitetura backend, testes automatizados e containerização.",
+    "Plataforma fullstack desenvolvida como TCC para conectar profissionais freelancers e contratantes. O sistema integra frontend moderno e tipado com backend robusto estruturado em arquitetura em camadas.",
+
   "p4.title": "API de Autenticação",
   "p4.short": "API de autenticação JWT com tokens de acesso e refresh.",
   "p4.long":
@@ -156,6 +164,7 @@ const pt: Dict = {
 }
 
 const en: Dict = {
+  // nav
   "nav.subtitle": "Backend Developer",
   "nav.home": "Home",
   "nav.about": "About",
@@ -163,31 +172,38 @@ const en: Dict = {
   "nav.projects": "Projects",
   "nav.contact": "Contact",
 
+  // loading
   "loading.text": "Initializing experience",
 
-  "hero.subtitle": "ES Student · Brazil",
+  // photo
+  "hero.subtitle": "SE Student · Brazil",
 
+  // hero
   "hero.eyebrow": "Available for new opportunities",
   "hero.title": "Backend Developer",
   "hero.headline":
     "Transforming ideas into real solutions through software engineering.",
   "hero.sub":
-    "Software Engineering student focused on modern backend, system architecture and scalable product development.",
+    "Software Engineering student focused on backend, system architecture, and scalable digital product development.",
   "hero.long":
-    "I'm 18 years old and passionate about technology, software engineering, and building real-world solutions. Currently, I'm focusing my studies on backend development with Java and Spring Boot, while exploring modern frontend development to create complete, scalable, and well-structured applications. More than just writing code, I seek to understand business and how technology can generate real results.",
+    "I'm 18 years old and passionate about technology. Currently, I focus my studies on backend development with Java and Spring Boot, while exploring modern frontend to build complete, scalable, and well-structured applications. More than just writing code, I seek to understand business and how technology can generate real results.",
   "hero.cta.projects": "View Projects",
   "hero.cta.contact": "Get in Touch",
   "hero.cta.cv": "Download CV",
+
+  // badges
   "hero.badge.opentowork": "Open to Work",
   "hero.badge.freelance": "Available for Freelance",
   "hero.badge.products": "Building Real Products",
   "hero.badge.backend": "Backend Focused",
   "hero.badge.engineering": "Engineering Mindset",
-  "hero.stat.projects": "Real Projects",
+
+  "hero.stat.projects": "Featured Projects",
   "hero.stat.backend": "Backend Focused",
   "hero.stat.fullstack": "Full Stack Projects",
   "hero.stat.learning": "Always Learning",
 
+  // marquee
   "hero.marquee.1": "Building scalable solutions.",
   "hero.marquee.2": "Engineering ideas into reality.",
   "hero.marquee.3": "Focused on real-world products.",
@@ -197,61 +213,70 @@ const en: Dict = {
   "hero.marquee.7": "Learning. Building. Evolving.",
   "hero.marquee.8": "Creating technology with vision.",
 
+  // about
   "about.eyebrow": "About Me",
-  "about.title": "Engineering, product and vision.",
+  "about.title": "Engineering, product, and technology.",
   "about.p1":
-    "My journey in technology began driven by the desire to work with what I love and to add real value, and quickly transformed into a clear ambition: to build real solutions through software engineering.",
+    "My journey in technology began driven by the desire to work with what I love and add real value, and quickly transformed into a clear ambition: building solutions through technology.",
   "about.p2":
-    "I am currently a Software Engineering student and I focus my studies mainly on the Java and Spring Boot ecosystem, developing backend applications, secure REST APIs, and scalable architectures. At the same time, I also explore frontend technologies such as React, Next.js, and TypeScript to understand end-to-end solution development.",
+    "I am currently a Software Engineering student focusing my studies mainly on the Java and Spring Boot ecosystem, developing backend applications, secure REST APIs, and scalable architectures. At the same time, I also explore frontend technologies such as React, Next.js, and TypeScript to understand end-to-end solution development.",
   "about.p3":
-    "I have a strong interest in software architecture, well-structured systems, and building digital solutions that truly solve problems. I like to look beyond the code, understanding the product, scalability, and business vision as well.",
+    "I have a strong interest in software architecture, well-structured systems, and building digital solutions that truly solve problems. I like to look beyond the code, understanding product, scalability, and business vision.",
   "about.p4":
-    "I constantly seek technical and professional growth, aiming to work on high-level projects, international opportunities and solutions that generate real impact.",
-  "about.p5": "I believe technology goes far beyond tools: it is the ability to turn ideas into reality.",
-  "about.quote": "Backend first and building with purpose.",
+    "I constantly seek technical and professional growth, aiming to work on high-level projects, international opportunities, and solution development that generates real impact.",
+  "about.p5":
+    "I believe technology goes far beyond tools: it is the ability to turn ideas into reality.",
+  "about.quote": "Backend focused and building with purpose.",
   "about.card.backend.title": "Backend Engineering",
-  "about.card.backend.desc": "Secure, scalable and well-structured REST APIs with Java and Spring Boot.",
+  "about.card.backend.desc": "Secure, scalable, and well-structured REST APIs with Java and Spring Boot.",
   "about.card.fullstack.title": "Full Stack Development",
-  "about.card.fullstack.desc": "End-to-end products, from database to interface.",
+  "about.card.fullstack.desc": "End-to-end solutions, from database to user interface.",
   "about.card.architecture.title": "Software Architecture",
   "about.card.architecture.desc": "Layered, organized, sustainable systems ready to scale.",
   "about.card.product.title": "Product Vision",
-  "about.card.product.desc": "Thinking beyond code: business, users and real impact.",
+  "about.card.product.desc": "Thinking beyond code: business, users, and real impact.",
 
+  // skills
   "skills.eyebrow": "Technologies & Tools",
   "skills.title": "Modern stack to build real products.",
-  "skills.desc": "Technologies I use to build modern, scalable applications focused on real solutions.",
+  "skills.desc":
+    "Technologies I use to build modern, scalable applications focused on real solutions.",
   "skills.backend": "Backend",
   "skills.frontend": "Frontend",
   "skills.tools": "Tools",
 
+  // projects
   "projects.eyebrow": "Selected Work",
   "projects.title": "Building with purpose.",
   "projects.desc":
-    "A selection of projects that reflect my engineering mindset, backend focus and product vision.",
-  "projects.status.dev": "Final phase of deployment",
+    "A selection of projects that reflect my engineering mindset, backend focus, and product vision.",
+  "projects.status.dev": "Deployment phase",
   "projects.status.mvp": "MVP",
   "projects.status.done": "Completed",
-  "projects.tcc": "TCC Project",
+  "projects.tcc": "Graduation Project",
   "projects.viewGithub": "GitHub",
-  "projects.imageSoon": "Image of the project coming soon.",
+  "projects.imageSoon": "Project image coming soon",
   "projects.highlights": "Highlights",
   "projects.viewSite": "Visit Site",
+
   "p1.h1": "JWT Authentication",
   "p1.h2": "Google OAuth",
   "p1.h3": "Shopping Cart",
   "p1.h4": "WhatsApp Integration",
-  "p1.h5": "Modern fullstack",
-  "p2.h1": "Job system",
-  "p2.h2": "Applications",
-  "p2.h3": "JWT Security",
-  "p2.h4": "Layered architecture",
-  "p2.h5": "REST API",
-  "p3.h1": "Java",
-  "p3.h2": "Spring Boot",
-  "p3.h3": "Docker",
-  "p3.h4": "Layered arch.",
-  "p3.h5": "Automated tests",
+  "p1.h5": "Modern Fullstack",
+
+  "p2.h1": "Next.js",
+  "p2.h2": "TypeScript",
+  "p2.h3": "TailwindCSS",
+  "p2.h4": "Modern Template",
+  "p2.h5": "Real Solution",
+
+  "p3.h1": "Job System",
+  "p3.h2": "Applications",
+  "p3.h3": "JWT Security",
+  "p3.h4": "Layered Architecture",
+  "p3.h5": "REST API",
+
   "p4.h1": "JWT",
   "p4.h2": "Refresh Token",
   "p4.h3": "Spring Security",
@@ -259,37 +284,39 @@ const en: Dict = {
   "p4.h5": "MySQL",
 
   "p1.title": "Katallo",
-  "p1.short": "Plataforma para pequenos comércios venderem pelo WhatsApp.",
+  "p1.short": "Platform for small businesses to sell directly via WhatsApp.",
   "p1.long":
-    "Katallo é uma plataforma projetada para conectar catálogos online diretamente ao WhatsApp. O projeto combina uma experiência moderna no frontend com um backend robusto responsável por autenticação, gerenciamento de produtos, categorias e analytics.",
+    "Katallo is a platform designed to connect online catalogs directly to WhatsApp. The project combines a modern frontend experience with a robust backend responsible for authentication, product management, categories, and analytics.",
 
-  "p2.title": "ClickJob",
-  "p2.short": "Freelancer platform focused on connecting talent and opportunities.",
+  "p2.title": "GB Games Store",
+  "p2.short": "Katallo template for a Tech & Computer store.",
   "p2.long":
-    "Fullstack platform developed as a graduation project to connect freelancers and clients. The system integrates a modern, typed frontend with a robust backend structured in a layered architecture.",
+    "Template implemented on top of the Katallo platform for GB Games Store. The project demonstrates a real-world product catalog directing customers to WhatsApp to complete their orders.",
 
-  "p3.title": "REST API — Stock Management",
-  "p3.short": "REST API for stock and product management.",
+  "p3.title": "ClickJob",
+  "p3.short": "Freelancer platform focused on connecting talent with opportunities.",
   "p3.long":
-    "REST API built with Java and Spring Boot, focused on efficient management of products and categories, applying best practices of backend architecture, automated testing and containerization.",
+    "Fullstack platform developed as a graduation project to connect freelance professionals and clients. The system integrates a modern, typed frontend with a robust backend structured in a layered architecture.",
 
   "p4.title": "Authentication API",
   "p4.short": "JWT authentication API with access and refresh tokens.",
   "p4.long":
-    "Authentication API developed with Spring Boot implementing JWT Authentication with Access and Refresh Tokens, following modern security and backend architecture best practices.",
+    "Authentication API built with Spring Boot implementing JWT authentication with Access Token and Refresh Token, following modern security and backend architecture best practices.",
 
+  // contact
   "contact.eyebrow": "Contact",
   "contact.title": "Let's build something incredible together.",
   "contact.desc":
-    "I'm open to internship opportunities, freelance work and challenging projects. If you're looking for someone committed, ambitious and passionate about technology — let's talk.",
+    "I'm open to internship opportunities, freelance work, and challenging projects. If you're looking for someone committed, ambitious, and passionate about technology, let's talk.",
   "contact.email": "Email",
   "contact.github": "GitHub",
   "contact.linkedin": "LinkedIn",
   "contact.whatsapp": "WhatsApp",
   "contact.cta": "Send Email",
 
+  // footer
   "footer.main": "Designed & Built by Gabriel Oliveira.",
-  "footer.sub": "Focused on backend engineering, scalable systems and real-world products.",
+  "footer.sub": "Focused on software engineering, scalable systems, and real-world products.",
   "footer.rights": "All rights reserved.",
 }
 
