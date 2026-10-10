@@ -29,7 +29,7 @@ const pt: Dict = {
   "hero.sub":
     "Estudante de Engenharia de Software focado em backend, arquitetura de sistemas e desenvolvimento de soluções escaláveis.",
   "hero.long":
-    "Tenho 18 anos e sou apaixonado por tecnologia. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro o frontend moderno para desenvolver aplicações completas, escaláveis, e bem estruturadas. Mais do que apenas escrever código, busco entender negócios e como a tecnologia pode gerar resultado real.",
+    "Tenho 19 Anos e sou apaixonado por tecnologia. Atualmente foco meus estudos em backend com Java e Spring Boot, enquanto exploro o frontend moderno para desenvolver aplicações completas, escaláveis, e bem estruturadas. Mais do que apenas escrever código, busco entender negócios e como a tecnologia pode gerar resultado real.",
   "hero.cta.projects": "Ver Projetos",
   "hero.cta.contact": "Entrar em Contato",
   "hero.cta.cv": "Download CV",
@@ -125,17 +125,17 @@ const pt: Dict = {
   "p4.h3": "Spring Security",
   "p4.h4": "Docker",
   "p4.h5": "MySQL",
-  
+
   "p1.title": "Katallo",
   "p1.short": "Plataforma para pequenos comércios venderem pelo WhatsApp.",
   "p1.long":
     "Katallo é uma plataforma projetada para conectar catálogos online diretamente ao WhatsApp. O projeto combina uma experiência moderna no frontend com um backend robusto responsável por autenticação, gerenciamento de produtos, categorias e analytics.",
-  
+
   "p2.title": "GB Games Store",
   "p2.short": "Template da Katallo para uma Loja de Técnologia & Informática.",
   "p2.long":
     "Template implementado a plataforma Katallo para a GB Games Store. O projeto demonstra na prática um catálogo de produtos direcionando o cliente até o WhatsApp para a finalização do pedido.",
-    
+
   "p3.title": "ClickJob",
   "p3.short": "Plataforma para freelancers focada em conectar talentos e oportunidades.",
   "p3.long":

@@ -44,7 +44,7 @@ export function Hero() {
 
             <div className="space-y-4">
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
-                Gabriel Oliveira / 18 Anos
+                Gabriel Oliveira / 19 Anos
               </p>
               <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-[4.25rem]">
                 <span className="block">{t("hero.title").split("&")[0].trim()}</span>
